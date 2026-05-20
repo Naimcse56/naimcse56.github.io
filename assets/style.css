@@ -18,6 +18,7 @@ body{
     font-family:Segoe UI, sans-serif;
     overflow-x:hidden;
     position:relative;
+    line-height:1.6;
 }
 
 /* BACKGROUND EFFECT */
@@ -54,16 +55,53 @@ body::after{
     padding:14px 0;
 }
 
+/* brand */
 .navbar-brand{
     font-size:20px;
     font-weight:700;
     color:#fff !important;
 }
 
+/* buttons */
 .navbar .btn{
     font-size:14px;
     padding:9px 16px;
     border-radius:30px;
+}
+
+/* MENU */
+.navbar-nav .nav-link{
+    color:#cbd5e1 !important;
+    margin:0 10px;
+    transition:0.3s;
+    position:relative;
+}
+
+/* hover */
+.navbar-nav .nav-link:hover{
+    color:#ff2d20 !important;
+}
+
+/* ACTIVE MENU */
+.navbar-nav .nav-link.active{
+    color:#ff2d20 !important;
+}
+
+/* underline animation */
+.navbar-nav .nav-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#ff2d20;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after{
+    width:100%;
 }
 
 /* =========================
@@ -120,6 +158,7 @@ body::after{
     z-index:2;
 }
 
+/* TEXT */
 .header-section h1{
     font-size:56px;
     font-weight:800;
@@ -134,9 +173,10 @@ body::after{
 .header-section p{
     color:#cbd5e1;
     margin-top:20px;
-    line-height:1.8;
     font-size:18px;
 }
+
+/* EXPERIENCE BADGE */
 .exp-badge{
     display:inline-block;
     background:rgba(255,45,32,0.15);
@@ -147,19 +187,7 @@ body::after{
     font-size:13px;
     margin-bottom:15px;
 }
-.navbar-nav .nav-link{
-    color:#cbd5e1 !important;
-    margin:0 10px;
-    transition:0.3s;
-}
 
-.navbar-nav .nav-link:hover{
-    color:#ff2d20 !important;
-}
-
-.navbar-nav .nav-link.active{
-    color:#ff2d20 !important;
-}
 /* =========================
    BUTTON
 ========================= */
@@ -180,7 +208,6 @@ body::after{
 .btn-custom:hover{
     transform:translateY(-4px);
     box-shadow:0 15px 40px rgba(255,45,32,0.4);
-    color:#fff;
 }
 
 /* =========================
@@ -212,7 +239,7 @@ body::after{
 }
 
 /* =========================
-   CARD STYLE
+   CARD
 ========================= */
 
 .card-box{
@@ -228,9 +255,7 @@ body::after{
 .card-box:hover{
     transform:translateY(-8px);
     border-color:rgba(255,45,32,0.3);
-    box-shadow:
-        0 15px 40px rgba(255,45,32,0.15),
-        0 0 20px rgba(255,45,32,0.08);
+    box-shadow:0 15px 40px rgba(255,45,32,0.15);
 }
 
 /* =========================
@@ -242,9 +267,7 @@ body::after{
     max-width:420px;
     border-radius:24px;
     border:3px solid rgba(255,45,32,0.5);
-    box-shadow:
-        0 0 30px rgba(255,45,32,0.25),
-        0 0 60px rgba(255,45,32,0.12);
+    box-shadow:0 0 40px rgba(255,45,32,0.2);
 }
 
 /* =========================
@@ -254,7 +277,6 @@ body::after{
 .timeline-modern{
     border-left:2px solid #ff2d20;
     padding-left:25px;
-    margin-left:10px;
 }
 
 .timeline-card{
@@ -281,21 +303,6 @@ body::after{
     box-shadow:0 0 10px #ff2d20;
 }
 
-.role{
-    display:inline-block;
-    background:#ff2d20;
-    padding:4px 12px;
-    border-radius:20px;
-    font-size:12px;
-    margin:6px 0;
-}
-
-.date{
-    display:block;
-    font-size:13px;
-    color:#94a3b8;
-}
-
 /* =========================
    FOOTER
 ========================= */
@@ -317,11 +324,6 @@ footer{
 
     .header-section{
         text-align:center;
-        padding-top:140px;
-    }
-
-    .header-section .row{
-        flex-direction:column-reverse;
     }
 
     .header-section h1{
@@ -340,21 +342,6 @@ footer{
 
 @media (max-width:768px){
 
-    .navbar-brand{
-        font-size:15px;
-    }
-
-    .navbar .btn{
-        font-size:12px;
-        padding:7px 12px;
-    }
-
-    .header-section{
-        min-height:auto;
-        padding-top:120px;
-        padding-bottom:60px;
-    }
-
     .header-section h1{
         font-size:34px;
     }
@@ -366,12 +353,9 @@ footer{
     .profile{
         width:80%;
         max-width:260px;
-        margin-bottom:30px;
     }
 
-    .btn-custom{
-        width:100%;
-        max-width:320px;
+    .navbar-brand{
         font-size:15px;
     }
 
@@ -382,14 +366,6 @@ footer{
     .title{
         font-size:28px;
     }
-
-    .timeline-modern{
-        padding-left:18px;
-    }
-
-    .timeline-dot{
-        left:-27px;
-    }
 }
 
 @media (max-width:480px){
@@ -398,18 +374,9 @@ footer{
         font-size:28px;
     }
 
-    .header-section p{
-        font-size:14px;
-        line-height:1.7;
-    }
-
-    .profile{
-        width:85%;
-        max-width:220px;
-    }
-
-    .title{
-        font-size:24px;
+    .btn-custom{
+        width:100%;
+        text-align:center;
     }
 
     .card-box{
@@ -420,4 +387,3 @@ footer{
         font-size:13px;
     }
 }
-```
