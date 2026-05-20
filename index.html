@@ -96,7 +96,7 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6" data-aos="fade-right">
-                  <h1>Laravel Developer for <span>Scalable Business Systems</span></h1>
+                  <h1>Software Developer for <span>Scalable Business Systems</span></h1>
                   <p class="exp-badge">7+ Years Building Enterprise Business Systems</p>
                   <p>
                      Business Software Consultant | SaaS | ERP | Accounting | E-commerce Specialist<br>
@@ -430,6 +430,31 @@
       <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
       <script>
          AOS.init({duration:1000});
+      </script>
+      <script>
+         const sections = document.querySelectorAll("section");
+         const navLinks = document.querySelectorAll(".nav-link");
+
+         window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach(section => {
+               const sectionTop = section.offsetTop - 120;
+               const sectionHeight = section.clientHeight;
+
+               if (scrollY >= sectionTop) {
+                     current = section.getAttribute("id");
+               }
+            });
+
+            navLinks.forEach(link => {
+               link.classList.remove("active");
+
+               if (link.getAttribute("href") === "#" + current) {
+                     link.classList.add("active");
+               }
+            });
+         });
       </script>
    </body>
 </html>
