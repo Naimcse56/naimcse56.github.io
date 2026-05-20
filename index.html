@@ -42,12 +42,49 @@
    </head>
    <body>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-dark fixed-top">
+      <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
          <div class="container">
-            <a class="navbar-brand fw-bold">MD NAIMUL ISLAM</a>
-            <a href="https://wa.me/8801873868060" class="btn btn-success">
-            <i class="fa-brands fa-whatsapp"></i> Hire Me
-            </a>
+
+            <a class="navbar-brand fw-bold" href="#home">MD NAIMUL ISLAM</a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="topNav">
+
+               <ul class="navbar-nav ms-auto text-center">
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#home">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#service">Service</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+
+               </ul>
+
+               <!-- CTA Button -->
+               <a href="https://wa.me/8801873868060" class="btn btn-success ms-lg-3 mt-3 mt-lg-0">
+                  <i class="fa-brands fa-whatsapp"></i> Hire Me
+               </a>
+
+            </div>
          </div>
       </nav>
       <!-- header-section -->
@@ -82,7 +119,7 @@
          </div>
       </section>
       <!-- SKILLS -->
-      <section class="section text-center">
+      <section class="section text-center" id="skills">
          <div class="container">
             <h2 class="title" data-aos="fade-up">Technical Expertise</h2>
             <p class="mb-5" data-aos="fade-up">
@@ -200,7 +237,7 @@
             </div>
          </div>
       </section>
-      <section class="section">
+      <section class="section" id="projects">
          <div class="container">
             <h2 class="title" data-aos="fade-up">Working Projects</h2>
             <!-- INTRO (use above text here) -->
@@ -280,7 +317,7 @@
          </div>
       </section>
       <!-- SERVICES -->
-      <section class="section">
+      <section class="section" id="service">
          <div class="container">
             <h2 class="title" data-aos="fade-up">Services I Offer</h2>
             <div class="row g-4">
@@ -312,7 +349,7 @@
          </div>
       </section>
       <!-- CTA -->
-      <section class="section text-center">
+      <section class="section text-center" id="contact">
          <div class="container" data-aos="fade-up">
             <h2 class="title">Let’s Build Something Powerful</h2>
             <a href="https://wa.me/8801873868060" class="btn-custom">

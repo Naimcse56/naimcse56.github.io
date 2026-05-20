@@ -147,6 +147,19 @@ body::after{
     font-size:13px;
     margin-bottom:15px;
 }
+.navbar-nav .nav-link{
+    color:#cbd5e1 !important;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#ff2d20 !important;
+}
+
+.navbar-nav .nav-link.active{
+    color:#ff2d20 !important;
+}
 /* =========================
    BUTTON
 ========================= */
