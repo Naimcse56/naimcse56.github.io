@@ -1,0 +1,132 @@
+body {
+	background: #0f172a;
+	color: #fff;
+	font-family: Segoe UI;
+	scroll-behavior: smooth;
+}
+
+/* NAV */
+.navbar {
+	background: rgba(15, 23, 42, 0.9);
+	backdrop-filter: blur(10px);
+}
+
+/* header-section */
+.header-section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.header-section h1 {
+	font-size: 52px;
+}
+
+.header-section span {
+	color: #38bdf8;
+}
+
+.btn-custom {
+	background: #38bdf8;
+	padding: 12px 25px;
+	border-radius: 30px;
+	color: #000;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/* SECTION */
+.section {
+	padding: 80px 0;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 700;
+}
+
+/* CARD */
+.card-box {
+	background: #1e293b;
+	padding: 25px;
+	border-radius: 15px;
+	transition: 0.3s;
+	height: 100%;
+}
+
+.card-box:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+}
+
+/* SKILLS */
+.badge-skill {
+	background: #334155;
+	padding: 10px 15px;
+	border-radius: 20px;
+	margin: 5px;
+	display: inline-block;
+}
+
+/* TIMELINE */
+.timeline-modern {
+	border-left: 2px solid #38bdf8;
+	padding-left: 25px;
+	margin-left: 10px;
+}
+
+.timeline-card {
+	position: relative;
+	background: #1e293b;
+	padding: 20px;
+	border-radius: 12px;
+	margin-bottom: 25px;
+	transition: 0.3s;
+}
+
+.timeline-card:hover {
+	transform: translateY(-5px);
+}
+
+.timeline-dot {
+	position: absolute;
+	left: -35px;
+	top: 20px;
+	width: 12px;
+	height: 12px;
+	background: #38bdf8;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #38bdf8;
+}
+
+.role {
+	display: inline-block;
+	background: #0ea5e9;
+	padding: 3px 10px;
+	border-radius: 20px;
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+.date {
+	display: block;
+	font-size: 12px;
+	color: #94a3b8;
+}
+
+/* PROFILE */
+.profile {
+	width: 80%;
+	border-radius: 20px;
+	border: 3px solid #38bdf8;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+	padding: 25px;
+	background: #020617;
+}
